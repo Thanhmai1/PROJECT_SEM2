@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <title>Log in</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="../images/quicksnacklogo.png" type="images/x-icon">
+</head>
+<html>
+<body>
+  <a href="../index.html"><img style="width: 200px; text-align: center;" src="../images/quicksnacklogo.png"></a>
+  
+    <section>
+      <div class="container" id="container">
+        <form id="form-reg" class="bg-light p-4 my-3" action="../db/reg.php" method="post"></form>
+        <div class="form-container sign-up-container">
+          
+          <form action="#">
+            <h1>Sign Up</h1>
+            <div class="social-container">
+              <a style="text-decoration: none;" href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#"><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i></a>
+            </div>
+            <span>Sign up with Email</span>
+            <label>
+              <input type="text" name="name" placeholder="Name" />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" />
+            </label>
+            <label>
+              <input type="password" name="password" placeholder="Password" />
+            </label>
+            <div>
+              <div class="form check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" checked id="chef" value="chef">
+                <label class="form-check-label" for="chef">Chef</label>
+              </div>
+              <div class="form check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" checked id="user" value="user">
+                <label class="form-check-label" for="user">User</label>
+              </div>
+            </div>
+            <button style="margin-top: 9px" type="submit">Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i></a>
+            </div>
+            <span>Sign in with E-Mail Address</span>
+            <label>
+              <input type="email" placeholder="Email" />
+            </label>
+            <label>
+              <input type="password" placeholder="Password" />
+            </label>
+            <a href="#">Forgot your password?</a>
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Log in</h1>
+              <p>Sign in here if you already have an account </p>
+              <button class="ghost mt-5" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Create, Account!</h1>
+              <p>Sign up if you still don't have an account ... </p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <a href="../index.html"><button class="Home">Home</button></a>
+    </div>
+    <script src="../js/login.js">
+    </script>
+  </body>
+</html>
